@@ -20,7 +20,7 @@ h1 {
 
   background: linear-gradient(to right, #ffffff, #bbbbbb);
   -webkit-background-clip: text;
-  color: #003366;
+  color: #white;
 
   text-shadow: 
     0 0 10px rgba(0, 100, 255, 0.8),
