@@ -116,17 +116,6 @@ header p {
   transform: scale(1.05);
 }
 
-
-
-/* 少しズラしてHUD感 */
-.hud-btn:nth-child(odd) {
-  transform: translateX(-10px);
-}
-
-.hud-btn:nth-child(even) {
-  transform: translateX(10px);
-}
-
 /* ホバー時はズレ戻す */
 .hud-btn:hover {
   transform: scale(1.05) translateX(0);
