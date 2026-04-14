@@ -1,1 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 
+/* 一番上のデカい画像 */
+.hero {
+  width: 100%;
+  height: 350px;
+  background: url("bg.jpg") no-repeat center/cover;
+}
+
+/* タイトル */
+header {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
