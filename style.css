@@ -4,13 +4,25 @@ body {
   background-color: black;
   color: #00ccff;
   text-align: center;
+  overflow-x: hidden;
+}
+
+/* 背景グリッド（SAO感） */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(#00ccff22 1px, transparent 1px),
+    linear-gradient(90deg, #00ccff22 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
 }
 
 /* バナー */
 .banner {
   width: 100%;
-  height: auto;
-  display: block;
   opacity: 0.7;
 }
 
@@ -18,6 +30,7 @@ body {
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 90px;
+  margin: 20px 0;
 
   background: linear-gradient(to bottom, #00aaff, #ffffff);
   -webkit-background-clip: text;
@@ -26,19 +39,29 @@ h1 {
   text-shadow: 0 0 20px rgba(0, 150, 255, 1);
 }
 
-/* HUDコンテナ */
-.hud {
-  margin-top: 40px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+/* サブタイトル */
+header p {
+  color: #00ccff;
+  letter-spacing: 2px;
+  margin-top: -10px;
 }
 
-/* HUDボタン */
+/* HUD（2列レイアウト） */
+.hud {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ボタン */
 .hud-btn {
-  width: 300px;
+  width: 100%;
   padding: 15px;
 
   font-size: 20px;
@@ -62,7 +85,7 @@ h1 {
   transition: 0.3s;
 }
 
-/* 上下ライン（SAOっぽい） */
+/* 上下ライン */
 .hud-btn::before,
 .hud-btn::after {
   content: "";
@@ -81,7 +104,7 @@ h1 {
   bottom: 0;
 }
 
-/* ホバー */
+/* ホバー演出 */
 .hud-btn:hover {
   background: rgba(0, 204, 255, 0.2);
 
@@ -91,4 +114,25 @@ h1 {
     inset 0 0 20px rgba(0, 204, 255, 0.8);
 
   transform: scale(1.05);
+}
+
+/* 最後のボタンを中央に */
+.hud-btn:last-child {
+  grid-column: span 2;
+  justify-self: center;
+  width: 50%;
+}
+
+/* 少しズラしてHUD感 */
+.hud-btn:nth-child(odd) {
+  transform: translateX(-10px);
+}
+
+.hud-btn:nth-child(even) {
+  transform: translateX(10px);
+}
+
+/* ホバー時はズレ戻す */
+.hud-btn:hover {
+  transform: scale(1.05) translateX(0);
 }
