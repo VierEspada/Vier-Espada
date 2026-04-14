@@ -7,12 +7,12 @@
   align-items: center;
 }
 
-body {
-  background-color: black;
+/* 文字見やすくする */
+.hero h1 {
   color: white;
-  text-align: center;
+  font-size: 50px;
 }
 
-h1 {
-  color: blue;
+.hero p {
+  color: white;
 }
