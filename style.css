@@ -23,7 +23,8 @@ h1 {
   color: #001f3f;
 
   text-shadow: 
-    2px 2px 5px rgba(0,0,0,0.7);
+    0 0 10px rgba(0, 100, 255, 0.8),
+    0 0 20px rgba(0, 100, 255, 0.5);
 }
 
 .btn {
