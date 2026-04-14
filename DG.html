@@ -13,52 +13,46 @@
 <h1>Duel Memories</h1>
 
 <!-- スライダー1 -->
-<div class="slider" data-slider>
-
-  <button class="arrow left" onclick="prevSlide(this)">◀</button>
-  <img class="slide-img" src="img1.jpg">
-  <button class="arrow right" onclick="nextSlide(this)">▶</button>
-
+<div class="slider">
+  <button class="arrow left" onclick="prevSlide(0)">◀</button>
+  <img id="slide0" class="slide-img">
+  <button class="arrow right" onclick="nextSlide(0)">▶</button>
 </div>
 
 <!-- スライダー2 -->
-<div class="slider" data-slider>
-
-  <button class="arrow left" onclick="prevSlide(this)">◀</button>
-  <img class="slide-img" src="img4.jpg">
-  <button class="arrow right" onclick="nextSlide(this)">▶</button>
-
+<div class="slider">
+  <button class="arrow left" onclick="prevSlide(1)">◀</button>
+  <img id="slide1" class="slide-img">
+  <button class="arrow right" onclick="nextSlide(1)">▶</button>
 </div>
 
 <!-- スライダー3 -->
-<div class="slider" data-slider>
-
-  <button class="arrow left" onclick="prevSlide(this)">◀</button>
-  <img class="slide-img" src="img7.jpg">
-  <button class="arrow right" onclick="nextSlide(this)">▶</button>
-
+<div class="slider">
+  <button class="arrow left" onclick="prevSlide(2)">◀</button>
+  <img id="slide2" class="slide-img">
+  <button class="arrow right" onclick="nextSlide(2)">▶</button>
 </div>
+
 <!-- スライダー写真管理 -->
-  <script>
+<script>
 const images = [
-  // スライダー1
   ["dp01.jpg","dp02.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg"],
-
-  // スライダー2
   ["img7.jpg","img8.jpg","img9.jpg","img10.jpg","img11.jpg","img12.jpg"],
-
-  // スライダー3
   ["img13.jpg","img14.jpg","img15.jpg","img16.jpg","img17.jpg","img18.jpg"]
 ];
 
 let index = [0, 0, 0];
 
 function show(i){
-  document.getElementById("slide"+i).src = images[i][index[i]];
+  document.getElementById("slide" + i).src = images[i][index[i]];
 }
 
 // 初期表示
-show(0); show(1); show(2);
+window.onload = () => {
+  show(0);
+  show(1);
+  show(2);
+};
 
 function nextSlide(i){
   index[i] = (index[i] + 1) % images[i].length;
@@ -70,4 +64,6 @@ function prevSlide(i){
   show(i);
 }
 </script>
+
 </body>
+</html>
