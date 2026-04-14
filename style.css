@@ -7,11 +7,16 @@
   align-items: center;
 }
 
-/* 文字見やすくする */
+
 .hero h1 {
   color: white;
   font-size: 50px;
 }
+
+.main-image {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
 
 .hero p {
   color: white;
