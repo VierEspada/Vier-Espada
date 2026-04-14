@@ -16,6 +16,16 @@ body {
 /* タイトル */
 header {
   padding: 20px;
+  h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  color: white;
+
+  /* 影でロゴっぽくする */
+  text-shadow: 
+    2px 2px 0px black,
+    4px 4px 10px rgba(0,0,0,0.8);
+}
 }
 
 h1 {
