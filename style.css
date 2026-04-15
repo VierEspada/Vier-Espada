@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* 背景グリッド（SAO感） */
 body::before {
   content: "";
   position: fixed;
@@ -20,13 +19,11 @@ body::before {
   z-index: -1;
 }
 
-/* バナー */
 .banner {
   width: 100%;
   opacity: 0.7;
 }
 
-/* タイトル */
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 90px;
@@ -39,7 +36,6 @@ h1 {
   text-shadow: 0 0 20px rgba(0, 150, 255, 1);
 }
 
-/* サブタイトル */
 header p {
   font-size: 28px;
   color: #00ccff;
@@ -47,7 +43,6 @@ header p {
   margin-top: -10px;
 }
 
-/* HUD（2列レイアウト） */
 .hud {
   margin-top: 50px;
 
@@ -61,7 +56,6 @@ header p {
   margin-right: auto;
 }
 
-/* ボタン */
 .hud-btn {
   width: 100%;
   padding: 15px;
@@ -87,7 +81,6 @@ header p {
   transition: 0.3s;
 }
 
-/* 上下ライン */
 .hud-btn::before,
 .hud-btn::after {
   content: "";
@@ -106,7 +99,6 @@ header p {
   bottom: 0;
 }
 
-/* ホバー演出 */
 .hud-btn:hover {
   background: rgba(0, 204, 255, 0.2);
 
@@ -118,7 +110,6 @@ header p {
   transform: scale(1.05);
 }
 
-/* ホバー時はズレ戻す */
 .hud-btn:hover {
   transform: scale(1.05) translateX(0);
 }
