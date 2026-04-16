@@ -136,3 +136,39 @@ button:hover {
     transform: translateX(0);
   }
 }
+/* 団長（青＋紫グラデ） */
+.leader {
+  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+}
+
+/* 副団長（紫） */
+.sub {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+/* スペード（青） */
+.spade {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+}
+
+/* ダイヤ（水色） */
+.diamond {
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+}
+
+/* ハート（ピンク） */
+.heart {
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+}
+
+/* クローバー（緑） */
+.club {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+.leader:hover { box-shadow: 0 0 25px #8b5cf6; }
+.sub:hover { box-shadow: 0 0 25px #6d28d9; }
+
+.spade:hover { box-shadow: 0 0 25px #38bdf8; }
+.diamond:hover { box-shadow: 0 0 25px #0ea5e9; }
+.heart:hover { box-shadow: 0 0 25px #ec4899; }
+.club:hover { box-shadow: 0 0 25px #22c55e; }
