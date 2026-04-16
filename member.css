@@ -141,3 +141,8 @@ button:hover {
     transform: translateX(0);
   }
 }
+/* 選択中カード */
+.active-card {
+  box-shadow: 0 0 30px #38bdf8 !important;
+  transform: translateX(15px) scale(1.05);
+}
