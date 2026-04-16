@@ -1,32 +1,32 @@
 const data = {
   leader: {
-    name: "団長",
+    name: "雨宮＠黒い剣士",
     role: "団長",
     desc: "Vier Espada 団長"
   },
   sub: {
-    name: "副団長",
+    name: "RUSK",
     role: "副団長",
     desc: "Vier Espada 副団長"
   },
   squad1: {
-    name: "♠隊隊長",
-    role: "♠隊隊長",
+    name: "iみみm",
+    role: "♠隊エース",
     desc: "戦闘に特化した隊"
   },
   squad2: {
-    name: "♦隊隊長",
-    role: "♦隊隊長",
+    name: "norakumo3373",
+    role: "♦隊エース",
     desc: "戦闘兼サポートに特化した隊"
   },
   squad3: {
-    name: "♥隊隊長",
-    role: "♥隊隊長",
+    name: "空席",
+    role: "♥隊エース",
     desc: "サポートに特化した隊"
   },
   squad4: {
-    name: "♣隊隊長",
-    role: "♣隊隊長",
+    name: "脱兎らび",
+    role: "♣隊エース",
     desc: "縁の下の力持ち隊"
   }
 };
