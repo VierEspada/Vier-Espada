@@ -9,7 +9,7 @@ const data = {
     name: "RUSK",
     role: "副団長",
     desc: "Vier Espada 副団長",
-    icon: "images/sub.png"
+    icon: "rusk.png"
   },
   squad1: {
     name: "iみみm",
